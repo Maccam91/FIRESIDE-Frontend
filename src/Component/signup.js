@@ -15,10 +15,10 @@ function SignUpPage(){
     loginFormData.append("password", formValue.password)
     try {
         const response = await axios({
-            method: "post",
-            url: process.env.USER_SIGNUP,
+            method: "POST",
+            url: process.env.REACT_APP_USER_SIGNUP,
             data: loginFormData,
-            headers: {"Content-Type": "multipart/form-data", password:'ty'}
+            headers: {"Content-Type": "multipart/form-data"}
         });
         
     } catch(error) {

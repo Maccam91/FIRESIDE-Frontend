@@ -12,8 +12,8 @@ function LoginPage(){
     loginFormData.append("password", formValue.password)
     try {
         const response = await axios({
-            method: "get",
-            url: "http://localhost:3000/user",
+            method: "POST",
+            url:process.env.REACT_APP_USER_LOGIN,
             data: loginFormData,
             headers: {"Content-Type": "multipart/form-data"}
         });
@@ -32,7 +32,7 @@ function LoginPage(){
     return (
         <div>
             <h2>Hello and Welcome to Fireside login in here</h2>
-            {/* <form onSubmit={handleSubmit}>            
+            <form onSubmit={handleSubmit}>            
                 <br/>
                 <h4>UserName</h4>
                 <input type='username' name="username" placeholder='enter a username' value={formValue.username} onChange={handleChange} />
@@ -41,7 +41,7 @@ function LoginPage(){
                 <input type='password' name="password" placeholder='create a password' value={formValue.password} onChange={handleChange}/>
                 <br/>
                 <input type='submit' value='Create Account'/>
-            </form> */}
+            </form>
         </div>
     )
 }

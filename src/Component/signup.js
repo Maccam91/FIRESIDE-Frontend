@@ -16,7 +16,7 @@ function SignUpPage(){
     try {
         const response = await axios({
             method: "post",
-            url: process.env.USER_SIGNUP || "http://localhost:3000/user/signup",
+            url: process.env.USER_SIGNUP,
             data: loginFormData,
             headers: {"Content-Type": "multipart/form-data", password:'ty'}
         });

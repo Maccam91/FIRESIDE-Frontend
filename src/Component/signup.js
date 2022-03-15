@@ -47,7 +47,7 @@ function SignUpPage(){
                 <h4>Password</h4>
                 <input type='password' name="password" placeholder='create a password' value={formValue.password} onChange={handleChange}/>
                 <br/>
-                <button value='Create Account' onClick={handleSubmit}/>
+                <button type='submit' value='Create Account' onClick={handleSubmit}/>
             </form>
         </div>
     )

@@ -3,19 +3,12 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 function FrontTest(){
-const [testData, setTestData] = useState()
 
-useEffect(()=>{
-    axios.get('http://localhost:3000/user/signup').then(res=>{
-        console.log(res.data.class)
-        setTestData(res.data.Class)
-    }
-
-    )
-}, [])
 return(
     <div>
-        <h1>{testData}</h1>
+        <h1>Fire Side Gaming</h1>
+        <h2>A place where you can showcase your content with your with friends</h2>
+        <img src='public/images/FiresideLogo.png'></img>
     </div>
 )
 }

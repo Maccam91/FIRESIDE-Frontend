@@ -5,10 +5,10 @@ import axios from 'axios'
 function FrontTest(){
 
 return(
-    <div>
-        <h1>Fire Side Gaming</h1>
-        <h2>A place where you can showcase your content with your with friends</h2>
-        <img src='/FiresideLogo.png' alt='image'/>
+    <div className='homePage'>
+        <img className='logoMain' src='/images/FiresideLogoSmall.png' alt='image'/>
+        <h2>Fire Side Gaming</h2>
+        <h4>A place where you can showcase your rpg content with your with Friends</h4>
     </div>
 )
 }

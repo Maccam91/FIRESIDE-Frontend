@@ -35,8 +35,10 @@ function SignUpPage(){
     
 
     return (
-        <div>
+        <div className='SignUp' >
             <h2>Hello and Welcome to Fireside</h2>
+            <h3>Ty for signing up</h3>
+            <div className='SignUpForm'>
             <form onSubmit={handleSubmit}>
                 <h4>Email</h4>
                 <input type='email' name="email" placeholder='enter an email address' value={formValue.email} onChange={handleChange} />
@@ -49,6 +51,7 @@ function SignUpPage(){
                 <br/>
                 <input type='submit'  value='Create Account'/>
             </form>
+            </div>
         </div>
     )
 }

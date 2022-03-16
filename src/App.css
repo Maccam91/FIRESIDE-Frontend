@@ -1,38 +1,82 @@
-.App {
+/* *{
+  box-sizing: border-box;
+  margin: 1.5rem;
+} */
+.topNav{
+  color: antiquewhite;
+  position: fixed;
+  top: 0px;
   text-align: center;
+  font-style: none;
+  background-color: rgb(41, 0, 0);
+  background-image: '/images/FiresideNav.png';
+  width: 100%;
+  height: 100px;
+  font-size: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavLogo{
+ float: inline-start;
+ display: block;
+ height: 100px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  text-align: center;
+  color: brown;
+  background-color: rgb(253, 244, 220);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+  position: fixed;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(253, 244, 220);
+}
+.SignUp{
+  top: 1cm;
+  left: 21cm;
+  position: relative;
+}
+.logoMain{
+  height: 500px;
+}
+.homePage{
+  
+  font-size: 1rem;
+  top: 1cm;
+  left: 17cm;
+  position: relative;
+}
+.SignUpForm{
+
+  border-radius: 15px;
+  background-color: rgba(247, 161, 0, 0.486);
+}
+.SignUpForm input{
+  color: brown;
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: rgba(255, 255, 255, 0.829);
+  border-radius: 5px;
+  width: 98%;
+  height: 44px;
+  outline: none;
+}
+.SignUpForm input::placeholder{
+  color: brown;
+}
+.SignUpForm input[type='submit']{
+  background-color: brown;
+  color: antiquewhite;
+  border-radius: 5px;
+  width: 90%;
+  cursor: pointer;
+}
+.SignUpForm input[type='submit']:hover{
+  transform: scale(1.1);
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

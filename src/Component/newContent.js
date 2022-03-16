@@ -24,7 +24,7 @@ function CreateContent(){
     } catch(error) {
         console.log(error)
     }
-    navigate('/')
+    
     }
     const handleChange = (e)=>{
         setformValue({

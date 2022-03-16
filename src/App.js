@@ -14,7 +14,7 @@ function App() {
       <nav className='topNav'>
       <Link to={'/'}element={<FrontTest/>}><img className='NavLogo' src='/images/FiresideNavLogoS.png'/> </Link>
         <Link to={'/content/create'} style={{ textDecoration: 'none' , color: 'antiquewhite', top: '10px', right: '5cm', position: 'absolute'  }} element={<CreateContent/>}>Demo</Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <Link to={'/signup'} style={{ textDecoration: 'none' , color: 'antiquewhite', top: '10px', right: '1cm', position: 'absolute'  }} element={<FrontTest/>}>Signup</Link>nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to={'/signup'} style={{ textDecoration: 'none' , color: 'antiquewhite', top: '10px', right: '1cm', position: 'absolute'  }} element={<FrontTest/>}>Signup</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to={'/content'} style={{ textDecoration: 'none' , color: 'antiquewhite', top: '10px', right: '9cm', position: 'absolute'  }} element={<ShowContent/>}>Content List</Link>
       </nav>
       <div className='reactApp' style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>

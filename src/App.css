@@ -78,5 +78,47 @@ body{
   transform: scale(1.1);
 
 }
+.CreateContent{
+  top: 1cm;
+  left: 21cm;
+  position: relative;
+  width: 400px;
+  background-color: rgba(247, 161, 0, 0.486);
+  border-radius: 15px;
+}
+.ContentCreateForm input{
+  color: brown;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: rgba(255, 255, 255, 0.829);
+  border-radius: 5px;
+  width: 98%;
+  height: 44px;
+  outline: none;
+}
+.ContentCreateForm textarea{
+  color: brown;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: rgba(255, 255, 255, 0.829);
+  border-radius: 5px;
+  width:99%;
+  height: auto;
+  outline: none;
+  resize: none;
+}
+
+.ContentCreateForm input[type='submit']:hover{
+  transform: scale(1.025);
+  background-color: brown;
+  color: antiquewhite;
+
+}
 
 

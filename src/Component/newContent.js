@@ -4,7 +4,9 @@ import {useNavigate} from 'react-router-dom'
 
 function CreateContent(){
     const navigate = useNavigate();
-    
+    function onClick(){
+        navigate('/content/create')
+    }
     const [formValue, setformValue] = useState({title:'',body:'', })
     const handleSubmit = async(e) =>{
     const createFormData = new FormData();
@@ -24,7 +26,7 @@ function CreateContent(){
     } catch(error) {
         console.log(error)
     }
-    
+    onClick();
     }
     const handleChange = (e)=>{
         setformValue({

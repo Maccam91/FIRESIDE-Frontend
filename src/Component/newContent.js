@@ -26,7 +26,8 @@ function CreateContent(){
     } catch(error) {
         console.log(error)
     }
-    onClick();
+    // onClick();
+    console.log(process.env.REACT_APP_CREATE_CONTENT)
     }
     const handleChange = (e)=>{
         setformValue({

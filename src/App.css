@@ -120,5 +120,8 @@ body{
   color: antiquewhite;
 
 }
+.ContentCreateForm input::placeholder textarea::placeholder{
+  color: brown;
+}
 
 

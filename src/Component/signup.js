@@ -24,7 +24,7 @@ function SignUpPage(){
     } catch(error) {
         console.log(error)
     }
-    onClick();
+    // onClick();
     }
     const handleChange = (e)=>{
         setformValue({

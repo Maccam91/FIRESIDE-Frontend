@@ -10,7 +10,8 @@ function CreateContent(){
     const createFormData = new FormData();
     createFormData.append("email", formValue.title)
     createFormData.append("username", formValue.body)
-    e.preventDefault()
+    // e.preventDefault()
+    
     
     try {
         const response = await axios({
@@ -23,7 +24,7 @@ function CreateContent(){
     } catch(error) {
         console.log(error)
     }
-    
+    navigate('/')
     }
     const handleChange = (e)=>{
         setformValue({

@@ -8,7 +8,7 @@ function CreateContent(){
         navigate('/content/create')
     }
     const [formValue, setformValue] = useState({title:'',body:'', })
-    const handleSubmit = async(e) =>{
+    const handleSubmit = async() =>{
     const createFormData = new FormData();
     createFormData.append("email", formValue.title)
     createFormData.append("username", formValue.body)
@@ -27,7 +27,8 @@ function CreateContent(){
         console.log(error)
     }
     // onClick();
-    console.log(process.env.REACT_APP_CREATE_CONTENT)
+    
+    
     }
     const handleChange = (e)=>{
         setformValue({

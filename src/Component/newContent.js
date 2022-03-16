@@ -3,15 +3,17 @@ import React, { useEffect,useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 
 function CreateContent(){
+    console.log(process.env.REACT_APP_CREATE_CONTENT)
     const navigate = useNavigate();
     function onClick(){
-        navigate('/content/create')
+        navigate('/content')
+        
     }
     const [formValue, setformValue] = useState({title:'',body:'', })
     const handleSubmit = async() =>{
     const createFormData = new FormData();
-    createFormData.append("email", formValue.title)
-    createFormData.append("username", formValue.body)
+    createFormData.append("title", formValue.title)
+    createFormData.append("body", formValue.body)
     // e.preventDefault()
     
     

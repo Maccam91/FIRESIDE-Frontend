@@ -120,8 +120,17 @@ body{
   color: antiquewhite;
 
 }
-.ContentCreateForm input::placeholder textarea::placeholder{
+.ContentCreateForm input::placeholder {
+  color: brown;
+}
+.ContentCreateForm textarea::placeholder {
   color: brown;
 }
 
+.ContentPage{
+  font-size: 1rem;
+  top: 1cm;
+  left: 17cm;
+  position: relative;
+}
 

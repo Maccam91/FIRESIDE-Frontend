@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom'
 function SignUpPage(){
     const navigate = useNavigate();
     function onClick(){
-        navigate('/login')
+        navigate('/signup')
     }
     const [formValue, setformValue] = useState({email:'',username:'', password: ''})
     const handleSubmit = async() =>{
@@ -24,7 +24,7 @@ function SignUpPage(){
     } catch(error) {
         console.log(error)
     }
-    // onClick();
+    onClick();
     }
     const handleChange = (e)=>{
         setformValue({

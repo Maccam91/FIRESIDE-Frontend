@@ -26,7 +26,7 @@ function CreateContent(){
     } catch(error) {
         console.log(error)
     }
-    // onClick();
+    onClick();
     
     
     }

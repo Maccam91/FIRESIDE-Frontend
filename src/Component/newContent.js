@@ -3,7 +3,7 @@ import React, { useEffect,useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 
 function CreateContent(){
-    console.log(process.env.REACT_APP_CREATE_CONTENT)
+    
     const navigate = useNavigate();
     function onClick(){
         navigate('/content')

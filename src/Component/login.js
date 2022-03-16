@@ -4,7 +4,7 @@ import React, { useEffect,useState } from 'react'
 function LoginPage(){
     
 
-    const [formValue, setformValue] = useState({email:'',username:'', password: ''})
+    const [formValue, setformValue] = useState({username:'', password: ''})
     const handleSubmit = async() =>{
     const loginFormData = new FormData();
     

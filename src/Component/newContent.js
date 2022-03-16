@@ -6,10 +6,11 @@ function CreateContent(){
     const navigate = useNavigate();
     
     const [formValue, setformValue] = useState({title:'',body:'', })
-    const handleSubmit = async() =>{
+    const handleSubmit = async(e) =>{
     const createFormData = new FormData();
     createFormData.append("email", formValue.title)
     createFormData.append("username", formValue.body)
+    e.preventDefault()
     
     try {
         const response = await axios({
